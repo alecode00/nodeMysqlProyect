@@ -11,7 +11,7 @@ routes.get("/", (req, res) => {
       res.json(rows);
     });
   });
-});
+}) ;
 routes.post("/", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
