@@ -6,19 +6,19 @@ POST http://localhost:9000/api HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Curiel",
+    "nombre": "Ariel",
     "apellido": "Sutomusu",
     "curso": 8
 }
 ###
-DELETE http://localhost:9000/api/8 HTTP/1.1
+DELETE http://localhost:9000/api/9 HTTP/1.1
 ###
 PUT http://localhost:9000/api/3 HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Lamine Yamal",
-    "apellido": "Truturu",
+    "nombre": "Pau",
+    "apellido": "Cubars'i",
     "curso": 1
 
 }

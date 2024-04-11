@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = express.Router();
 
-routes.get("/get", (req, res) => {
+routes.get("/", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
@@ -12,7 +12,7 @@ routes.get("/get", (req, res) => {
     });
   });
 });
-routes.post("/post", (req, res) => {
+routes.post("/", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
@@ -23,7 +23,7 @@ routes.post("/post", (req, res) => {
     });
   });
 });
-routes.delete("/delete:id", (req, res) => {
+routes.delete("/:id", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
@@ -34,7 +34,7 @@ routes.delete("/delete:id", (req, res) => {
     });
   });
 });
-routes.put("/put:id", (req, res) => {
+routes.put("/:id", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
